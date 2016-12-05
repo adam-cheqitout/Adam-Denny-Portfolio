@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: gray; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=main.css.map */
