@@ -1,7 +1,17 @@
 body {
   padding: 0;
   margin: 0;
-  background: gray;
+  background: #ccc;
+}
+
+.navbar {
+  position: absolute !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.full-page {
+  height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -12,6 +22,38 @@ body {
 }
 
 .row {
+  height: 100vh;
+}
+
+.card {
   margin-top: 30px;
-  margin-bottom: 30px;
+}
+
+.main-image {
+  position: relative;
+  margin-bottom: -200px;
+  max-width: 100%;
+  min-width: 100%;
+  z-index: -1;
+
+  @media all and (max-width: 768px){
+    margin-bottom: -40px;
+  }
+}
+
+.main-context {
+  background-color: '#fff';
+
+}
+
+.cheqitout-logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  max-width: 150px !important;
+  min-width: 150px !important;
+  top: 100px;
+  right: 10%;
+  -webkit-filter: drop-shadow(0 3px 3px rgba(30,30,30,0.8));
+  filter: drop-shadow(0 3px 3px rgba(30,30,30,0.8));
 }

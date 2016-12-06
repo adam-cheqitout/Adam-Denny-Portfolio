@@ -14,27 +14,27 @@ export default class AudioBash extends Component {
     }
   }
   componentWillMount(){
-
+//<img src="images/map.jpg" />
   }
 
   render(){
     return (
-      <Card>
-        <CardMedia>
-          <img src="images/parallax1.jpg" />
-        </CardMedia>
-        <CardTitle title="AudioBash" subtitle="Card subtitle" />
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-          Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-          Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-        </CardText>
-        <CardActions>
-          <FlatButton label="Action1" />
-          <FlatButton label="Action2" />
-        </CardActions>
-      </Card>
+      <div className="full-page" style={{backgroundColor: 'blue'}}>
+        <div className="container">
+          <div className="row middle-xs">
+            <Card className="card col-sm-6 col-sm-offset-6">
+              <CardTitle title="AudioBash" subtitle="Internet Radio Social Network" />
+              <CardText>
+                AudioBash is an internet radio social network, incorporating real-time collaborative audio mixing in a browser window using PHP, MySQL, and JS.
+              </CardText>
+              <CardActions>
+                <FlatButton label="Action1" />
+                <FlatButton label="Action2" />
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+      </div>
     )
   }
 };

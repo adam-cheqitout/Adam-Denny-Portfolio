@@ -19,7 +19,7 @@ export default class Awards extends Component {
 
   render(){
     return (
-      <Card>
+      <Card className="card">
         <CardTitle title="Awards" />
       </Card>
     )

@@ -19,7 +19,7 @@ export default class BioButton extends Component {
 
   render(){
     return (
-      <Card>
+      <Card className="card">
         <CardTitle title="Bio" />
       </Card>
     )

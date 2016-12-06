@@ -14,27 +14,30 @@ export default class Collaboratory extends Component {
     }
   }
   componentWillMount(){
-
+//<img src="images/collab.jpg" />
   }
 
   render(){
     return (
-      <Card>
-        <CardMedia>
-          <img src="images/parallax1.jpg" />
-        </CardMedia>
-        <CardTitle title="Collaboratory" subtitle="Card subtitle" />
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-          Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-          Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-        </CardText>
-        <CardActions>
-          <FlatButton label="Action1" />
-          <FlatButton label="Action2" />
-        </CardActions>
-      </Card>
+      <div className="full-page" style={{backgroundColor: 'yellow'}}>
+        <div className="container">
+          <div className="row middle-xs">
+            <Card className="card col-sm-6 col-sm-offset-6">
+              <CardTitle title="Collaboratory" subtitle="Card subtitle" />
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+              </CardText>
+              <CardActions>
+                <FlatButton label="Action1" />
+                <FlatButton label="Action2" />
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+      </div>
     )
   }
 };

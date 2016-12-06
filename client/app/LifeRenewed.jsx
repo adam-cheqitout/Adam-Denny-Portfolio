@@ -14,27 +14,27 @@ export default class LifeRenewed extends Component {
     }
   }
   componentWillMount(){
-
+//  <img src="images/life_desktop.jpg" />
   }
 
   render(){
     return (
-      <Card>
-        <CardMedia>
-          <img src="images/parallax1.jpg" />
-        </CardMedia>
-        <CardTitle title="Life Renewed" subtitle="Card subtitle" />
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-          Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-          Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-        </CardText>
-        <CardActions>
-          <FlatButton label="Action1" />
-          <FlatButton label="Action2" />
-        </CardActions>
-      </Card>
+      <div className="full-page" style={{backgroundColor: 'gray'}}>
+        <div className="container">
+          <div className="row middle-xs">
+            <Card className="card col-sm-6 col-sm-offset-6">
+              <CardTitle title="Life Renewed" subtitle="Exhibit at the Mt. St. Helens Science and Learning Center" />
+              <CardText>
+                An accelerometer-controlled 3D video game on PC and Android which incorporates a flight simulator, a hacked DualShock 3 controller, a separate extra-wide touchscreen interface, and augmented reality. The game allows the player to explore 289 square miles of terrain surrounding Mount St. Helens. Built using Unity3D in both JavaScript and C#.
+              </CardText>
+              <CardActions>
+                <FlatButton label="Action1" />
+                <FlatButton label="Action2" />
+              </CardActions>
+            </Card>
+          </div>
+        </div>
+      </div>
     )
   }
 };
