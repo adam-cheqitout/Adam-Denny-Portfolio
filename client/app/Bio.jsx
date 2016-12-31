@@ -2,20 +2,12 @@ import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
-/**
- * A simple example of `AppBar` with an icon on the right.
- * By default, the left icon is a navigation-menu.
- */
 export default class Bio extends Component {
   constructor(props){
     super(props);
     this.state = {
 
     }
-  }
-  componentWillMount(){
-    //<img src="https://s3-us-west-2.amazonaws.com/cheqitout/HomeSliderPics_2.jpg" className="main-image"/>
-    //<img src="https://s3-us-west-2.amazonaws.com/cheqitout/cio_icon.png" className="cheqitout-logo" />
   }
   openSurca(){
     window.open("https://surca.wsu.edu/", "_blank");

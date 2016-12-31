@@ -3,19 +3,13 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import RaisedButton from 'material-ui/RaisedButton';
 import FontIcon from 'material-ui/FontIcon';
 import { Link } from 'react-router';
-/**
- * A simple example of `AppBar` with an icon on the right.
- * By default, the left icon is a navigation-menu.
- */
+
 export default class Footer extends Component {
   constructor(props){
     super(props);
     this.state = {
 
     }
-  }
-  componentWillMount(){
-//  <img src="images/life_desktop.jpg" />
   }
   openLifeRenewed(){
     window.open("http://dtc-wsuv.org/projects/life-renewed/", "_blank");

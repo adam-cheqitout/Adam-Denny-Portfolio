@@ -3,19 +3,13 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import { Link } from 'react-router';
-/**
- * A simple example of `AppBar` with an icon on the right.
- * By default, the left icon is a navigation-menu.
- */
+
 export default class Header extends Component {
   constructor(props){
     super(props);
     this.state = {
       navState: false
     }
-  }
-  componentWillMount(){
-    console.log(this.props.title);
   }
   toggleNav(){
     if(this.state.navState === false){
