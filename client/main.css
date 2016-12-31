@@ -1,2 +1,152 @@
-body{padding:0;margin:0;background:#ccc}.navbar{position:absolute !important;background:transparent !important;box-shadow:none !important}.full-page{height:100vh;width:100%}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{height:100vh}.card{margin-top:30px}.main-image{position:relative;margin-bottom:-200px;max-width:100%;min-width:100%;z-index:-1}@media all and (max-width: 768px){.main-image{margin-bottom:-40px}}.main-context{background-color:'#fff'}.cheqitout-logo{position:absolute;height:150px;width:150px;max-width:150px !important;min-width:150px !important;top:100px;right:10%;-webkit-filter:drop-shadow(0 3px 3px rgba(30,30,30,0.8));filter:drop-shadow(0 3px 3px rgba(30,30,30,0.8))}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', sans-serif; }
+
+.navbar {
+  position: absolute !important;
+  background: transparent !important;
+  box-shadow: none !important; }
+
+.full-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.project-info {
+  align-self: flex-end;
+  background: #fff;
+  width: 100%;
+  position: relative;
+  top: -50px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.49);
+  color: #444; }
+  @media all and (max-width: 768px) {
+    .project-info {
+      top: initial;
+      align-self: center; } }
+  .project-info h2, .project-info h3 {
+    font-family: "Questrial", sans-serif;
+    width: 100%; }
+  .project-info h2 {
+    font-size: 3em;
+    margin: 20px 10px 0 0; }
+  .project-info h3 {
+    font-style: italic;
+    color: #666; }
+  .project-info .em {
+    color: #000;
+    font-weight: bold; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.main-image {
+  position: relative;
+  margin-bottom: -200px;
+  max-width: 100%;
+  min-width: 100%;
+  z-index: -1; }
+  @media all and (max-width: 768px) {
+    .main-image {
+      margin-bottom: -40px; } }
+
+.main-context {
+  background-color: '#fff'; }
+
+.cheqitout-logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  max-width: 150px !important;
+  min-width: 150px !important;
+  top: 100px;
+  left: 10%; }
+
+.background {
+  background-image: url("https://s3-us-west-2.amazonaws.com/adam-d-misc/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .background h1 {
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 31pt;
+    display: block;
+    padding: 40px;
+    text-shadow: 0 1px 5px #333, 0 4px 14px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+    animation: fadeIn 1.5s;
+    animation-timing-function: cubic-bezier(0, 0.71, 0.3, 1.01);
+    font-family: 'Questrial', sans-serif; }
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  background: #fff; }
+  @media all and (max-width: 768px) {
+    .skills-list {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      max-height: 100px;
+      align-items: center;
+      justify-content: center; } }
+  .skills-list li {
+    align-self: center;
+    list-style-type: none;
+    margin: 10px;
+    font-family: 'Questrial', sans-serif; }
+    @media all and (max-width: 768px) {
+      .skills-list li {
+        flex: 1;
+        align-self: center; } }
+
+.nav-link a {
+  color: #444;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.g-recaptcha {
+  flex: 1;
+  align-self: flex-end;
+  padding: 10px 0; }
+
+footer {
+  width: 100%;
+  padding: 10px;
+  background: #444;
+  box-sizing: border-box; }
+  footer .copyright {
+    float: right;
+    color: #999;
+    margin-top: 10px; }
+
+@keyframes fadeIn {
+  0% {
+    top: 100px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
 /*# sourceMappingURL=main.css.map */

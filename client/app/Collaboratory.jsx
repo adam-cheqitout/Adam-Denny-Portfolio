@@ -19,22 +19,24 @@ export default class Collaboratory extends Component {
 
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'yellow'}}>
-        <div className="container">
-          <div className="row middle-xs">
-            <Card className="card col-sm-6 col-sm-offset-6">
-              <CardTitle title="Collaboratory" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-              </CardText>
-              <CardActions>
-                <FlatButton label="Action1" />
-                <FlatButton label="Action2" />
-              </CardActions>
-            </Card>
+      <div className="full-page" style={{backgroundColor: 'yellow', backgroundImage: "url(images/collab.jpg)"}}>
+        <div className="project-info">
+          <div className="container">
+            <div className="row middle-xs">
+              <Card className="card col-sm-6 col-sm-offset-6" style={{boxShadow: "none"}}>
+                <CardTitle title="Collaboratory" subtitle="Card subtitle" />
+                <CardText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+                  Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+                  Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                </CardText>
+                <CardActions>
+                  <FlatButton label="Action1" />
+                  <FlatButton label="Action2" />
+                </CardActions>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

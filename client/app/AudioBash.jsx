@@ -16,22 +16,25 @@ export default class AudioBash extends Component {
   componentWillMount(){
 //<img src="images/map.jpg" />
   }
-
+  openAudiobash(){
+    window.open("http://dtc-wsuv.org/adenny/audiobash/next.php", "_blank")
+  }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'blue'}}>
-        <div className="container">
-          <div className="row middle-xs">
-            <Card className="card col-sm-6 col-sm-offset-6">
-              <CardTitle title="AudioBash" subtitle="Internet Radio Social Network" />
-              <CardText>
-                AudioBash is an internet radio social network, incorporating real-time collaborative audio mixing in a browser window using PHP, MySQL, and JS.
-              </CardText>
-              <CardActions>
-                <FlatButton label="Action1" />
-                <FlatButton label="Action2" />
-              </CardActions>
-            </Card>
+      <div className="full-page" style={{backgroundColor: 'blue', backgroundImage: "url(images/map.jpg)"}}>
+        <div className="project-info">
+          <div className="container">
+            <div className="row middle-xs">
+              <Card className="card col-sm-6 col-sm-offset-6" style={{boxShadow: "none"}}>
+                <CardTitle title="AudioBash" subtitle="Internet Radio Social Network" />
+                <CardText>
+                  AudioBash is an internet radio social network, incorporating real-time collaborative audio mixing in a browser window using PHP, MySQL, and JS.
+                </CardText>
+                <CardActions>
+                  <FlatButton label="Go to Project Page" onTouchTap={this.openAudiobash} />
+                </CardActions>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

@@ -17,25 +17,28 @@ export default class Cheqitout extends Component {
     //<img src="https://s3-us-west-2.amazonaws.com/cheqitout/HomeSliderPics_2.jpg" className="main-image"/>
     //<img src="https://s3-us-west-2.amazonaws.com/cheqitout/cio_icon.png" className="cheqitout-logo" />
   }
-
+  openCheqitout(){
+    window.open('https://cheqitout.co', "_blank");
+  }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'orange'}}>
-        <div className="container">
-          <div className="row middle-xs">
-            <Card className="card col-sm-6 col-sm-offset-6">
-              <CardTitle title="CheQitout" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-              </CardText>
-              <CardActions>
-                <FlatButton label="Action1" />
-                <FlatButton label="Action2" />
-              </CardActions>
-            </Card>
+      <div className="full-page" style={{backgroundColor: 'orange', backgroundImage: "url(https://s3-us-west-2.amazonaws.com/cheqitout/HomeSliderPics_2.jpg)"}}>
+        <div className="project-info">
+          <div className="container">
+            <img src="https://s3-us-west-2.amazonaws.com/cheqitout/cio_icon.png" className="cheqitout-logo" />
+            <div className="row bottom-xs">
+              <Card className="card col-sm-6 col-sm-offset-6" style={{boxShadow: "none"}}>
+                <CardTitle title="CheQitout" subtitle="Keeping It Local" />
+                <CardText>
+                  <p>CheQitout is a platform where local businesses can post and sell deals, memberships, and tickets and reach audiences that would normally
+                  be out of reach for a small merchant. Adam is senior developer for the Vancouver-based startup.</p>
+                  <p>Adam wrote CheQitout’s backbone in <span className="em">Meteor.js</span>, the Android and iOS apps in <span className="em">React Native</span>, as well as utilizing technologies such as <span className="em">Braintree Marketplace</span>, <span className="em">Google Firebase</span>, <span className="em">Plivo</span>, <span className="em">Nginx</span>, <span className="em">AWS</span>, <span className="em">DigitalOcean</span>, and more.</p>
+                </CardText>
+                <CardActions>
+                  <FlatButton label="Go to CheQitout" onTouchTap={this.openCheqitout}/>
+                </CardActions>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

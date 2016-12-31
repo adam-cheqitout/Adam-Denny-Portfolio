@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-
+import { Link } from 'react-router';
 /**
  * A simple example of `AppBar` with an icon on the right.
  * By default, the left icon is a navigation-menu.
@@ -39,8 +39,9 @@ export default class Header extends Component {
           open={this.state.navState}
           onRequestChange={(open) => this.setState({navState: open})}
         >
-          <MenuItem onTouchTap={this.handleClose}>Menu Item</MenuItem>
-          <MenuItem onTouchTap={this.handleClose}>Menu Item 2</MenuItem>
+          <MenuItem className="nav-link" onTouchTap={this.handleClose}><Link to="/">Home</Link></MenuItem>
+          <MenuItem className="nav-link" onTouchTap={this.handleClose}><Link to="contact">Contact</Link></MenuItem>
+          <MenuItem className="nav-link" onTouchTap={this.handleClose}><a href="https://s3-us-west-2.amazonaws.com/adam-d-misc/Adam_Denny_Resume_2016.pdf">Resume</a></MenuItem>
         </Drawer>
       </div>
     )
