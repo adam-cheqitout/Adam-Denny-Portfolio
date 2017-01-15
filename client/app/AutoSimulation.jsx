@@ -9,15 +9,12 @@ export default class AutoSimulation extends Component {
 
     }
   }
-  componentWillMount(){
-//<img src="images/interior1.jpg" />
-  }
   openGithub(){
     window.open("https://github.com/adam-cheqitout/WSUV-Sandbox-Project", "_blank");
   }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'green', backgroundImage: "url(images/interior1.jpg)"}}>
+      <div className="full-page" style={{backgroundColor: 'green', backgroundImage: "url(https://s3-us-west-2.amazonaws.com/adam-d-misc/interior1.jpg)"}}>
         <div className="project-info">
           <div className="container">
             <div className="row middle-xs">

@@ -14,7 +14,7 @@ export default class LifeRenewed extends Component {
   }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'gray', backgroundImage: "url(images/life_desktop.jpg)"}}>
+      <div className="full-page" style={{backgroundColor: 'gray', backgroundImage: "url(https://s3-us-west-2.amazonaws.com/adam-d-misc/life_desktop.jpg)"}}>
         <div className="project-info">
           <div className="container">
             <div className="row bottom-xs">

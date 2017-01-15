@@ -166,6 +166,14 @@ footer {
   background: #444;
   box-sizing: border-box;
 
+  @media all and (max-width: 768px){
+    float: left;
+  }
+  .container {
+    @media all and (max-width: 768px){
+      padding: 0;
+    }
+  }
   .copyright {
     float: right;
     color: #999;

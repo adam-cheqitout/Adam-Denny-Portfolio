@@ -35,7 +35,7 @@ export default class Header extends Component {
         >
           <MenuItem className="nav-link" onTouchTap={this.handleClose}><Link to="/">Home</Link></MenuItem>
           <MenuItem className="nav-link" onTouchTap={this.handleClose}><Link to="contact">Contact</Link></MenuItem>
-          <MenuItem className="nav-link" onTouchTap={this.handleClose}><a href="https://s3-us-west-2.amazonaws.com/adam-d-misc/Adam_Denny_Resume_2016.pdf">Resume</a></MenuItem>
+          <MenuItem className="nav-link" onTouchTap={this.handleClose}><a href="https://s3-us-west-2.amazonaws.com/adam-d-misc/Adam_Denny_Resume_2017.pdf">Resume</a></MenuItem>
         </Drawer>
       </div>
     )

@@ -11,7 +11,7 @@ export default class Collaboratory extends Component {
   }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'yellow', backgroundImage: "url(images/collab.jpg)"}}>
+      <div className="full-page" style={{backgroundColor: 'yellow', backgroundImage: "url(https://s3-us-west-2.amazonaws.com/adam-d-misc/collab.jpg)"}}>
         <div className="project-info">
           <div className="container">
             <div className="row middle-xs">

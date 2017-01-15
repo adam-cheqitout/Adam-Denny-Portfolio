@@ -40,7 +40,7 @@ export default class Footer extends Component {
               style={{marginLeft: "20px"}}
             />
           </Link>
-        <div className="copyright">&copy; 2016 Adam Denny</div>
+        <div className="copyright">&copy; 2017 Adam Denny</div>
         </div>
       </footer>
     )

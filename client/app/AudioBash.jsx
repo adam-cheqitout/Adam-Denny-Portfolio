@@ -9,15 +9,12 @@ export default class AudioBash extends Component {
 
     }
   }
-  componentWillMount(){
-//<img src="images/map.jpg" />
-  }
   openAudiobash(){
     window.open("http://dtc-wsuv.org/adenny/audiobash/next.php", "_blank")
   }
   render(){
     return (
-      <div className="full-page" style={{backgroundColor: 'blue', backgroundImage: "url(images/map.jpg)"}}>
+      <div className="full-page" style={{backgroundColor: 'blue', backgroundImage: "url(https://s3-us-west-2.amazonaws.com/adam-d-misc/map.jpg)"}}>
         <div className="project-info">
           <div className="container">
             <div className="row middle-xs">
